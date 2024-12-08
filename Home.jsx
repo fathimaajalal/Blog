@@ -15,12 +15,12 @@ const Home = () => {
 
   return (
     <div style={styles.container}>
-      <h1>Blog Dashboard</h1>
+      <h1 style={styles.heading}>Blog Dashboard</h1>
       <div style={styles.cardContainer}>
         {blogs.map((blog) => (
           <div key={blog.id} style={styles.card}>
-            <h3>{blog.title}</h3>
-            <p>ID: {blog.id}</p>
+            <h3 style={styles.cardTitle}>{blog.title}</h3>
+            <p style={styles.cardId}>ID: {blog.id}</p>
           </div>
         ))}
       </div>
@@ -30,19 +30,37 @@ const Home = () => {
 
 const styles = {
   container: {
-    padding: '20px',
+    padding: '25px',
+    backgroundColor: '#ecf0f1',
+    minHeight: '100vh',
+  },
+  heading: {
+    textAlign: 'center',
+    color: '#2c3e50',
+    marginBottom: '30px',
+    fontSize: '28px',
   },
   cardContainer: {
     display: 'flex',
     flexWrap: 'wrap',
-    gap: '20px',
+    gap: '25px',
+    justifyContent: 'center',
   },
   card: {
-    border: '1px solid #ccc',
-    borderRadius: '10px',
-    padding: '10px',
-    width: '200px',
-    backgroundColor: '#f9f9f9',
+    border: '1px solid #dcdcdc',
+    borderRadius: '8px',
+    padding: '15px',
+    width: '220px',
+    backgroundColor: '#ffffff',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+  cardTitle: {
+    fontSize: '18px',
+    color: '#34495e',
+  },
+  cardId: {
+    color: '#7f8c8d',
+    fontSize: '14px',
   },
 };
 
