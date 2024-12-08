@@ -9,7 +9,7 @@ const App = () => {
       <div>
         <nav style={styles.navbar}>
           <Link to="/" style={styles.link}>
-            Home 
+            Home
           </Link>
           <Link to="/add-blog" style={styles.link}>
             Add Blog
@@ -27,15 +27,21 @@ const App = () => {
 const styles = {
   navbar: {
     display: 'flex',
-    justifyContent: 'space-around',
-    padding: '10px',
-    backgroundColor: '#333',
-    color: 'white',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    padding: '12px 20px',
+    backgroundColor: '#2C3E50',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
   },
   link: {
-    color: 'white',
+    color: '#ECF0F1',
     textDecoration: 'none',
-    fontSize: '18px',
+    fontSize: '20px',
+    fontWeight: '600',
+    transition: 'color 0.3s',
+  },
+  linkHover: {
+    color: '#3498DB',
   },
 };
 
