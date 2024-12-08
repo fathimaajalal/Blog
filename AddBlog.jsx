@@ -65,26 +65,30 @@ const AddBlog = () => {
 
 const styles = {
   container: {
-    padding: '20px',
-    maxWidth: '400px',
-    margin: 'auto',
+    padding: '30px',
+    maxWidth: '500px',
+    margin: '50px auto',
+    backgroundColor: '#f2f2f2',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    borderRadius: '8px',
   },
   form: {
     display: 'flex',
     flexDirection: 'column',
-    gap: '15px',
+    gap: '20px',
   },
   inputGroup: {
     display: 'flex',
     flexDirection: 'column',
   },
   button: {
-    padding: '10px',
-    backgroundColor: '#4CAF50',
+    padding: '12px',
+    backgroundColor: '#3CB371',
     color: 'white',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',
+    textTransform: 'uppercase',
   },
 };
 
